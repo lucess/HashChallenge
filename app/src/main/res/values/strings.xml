@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">HashChallenge</string>
+
+    <string name="comment_click_show">Click to show comments</string>
+    <string name="comment_click_hide">Click to hide comments</string>
+
+</resources>

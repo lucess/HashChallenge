@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view_post"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_large">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/spacing_small">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_image_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="@dimen/profile_image"
+                android:layout_height="@dimen/profile_image"
+                android:layout_marginEnd="@dimen/margin_normal" />
+
+            <TextView
+                android:id="@+id/text_view_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@id/image_view"
+                android:text="User Name"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_larger"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/separator_height"
+            android:layout_below="@id/linear_layout_image_title"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/text_view_post_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear_layout_image_title"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:text="Post Title"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_normal"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/separator_post_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/separator_height"
+            android:layout_below="@id/text_view_post_title"
+            android:layout_marginStart="@dimen/separator_margin_large"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_marginEnd="@dimen/separator_margin_large"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/text_view_post_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/separator_post_title"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:text="Post Text"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_small" />
+
+        <View
+            android:id="@+id/separator_comments"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/separator_height"
+            android:layout_below="@id/text_view_post_body"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/text_view_click_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/separator_comments"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/margin_normal"
+            android:text="@string/comment_click_show"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="@dimen/font_normal"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
